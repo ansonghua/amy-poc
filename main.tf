@@ -154,17 +154,8 @@ resource "aws_lambda_permission" "api_gw" {
   source_arn = "${aws_apigatewayv2_api.lambda.execution_arn}/*/*"
 }
 
-module "my-ecs-fargate" {
-    source = "./modules/ecs-fargate"
-    aws_region = var.aws_region
-    # ecs_task_execution_role_name = var.ecs_task_execution_role_name
-    # ecs_auto_scale_role_name = var.ecs_auto_scale_role_name
-    # az_count = var.az_count
-    # app_image = var.app_image
-    # app_port = var.app_port
-    # app_count = var.app_count
-    # health_check_path = var.health_check_path
-    # fargate_cpu = var.fargate_cpu
-    # fargate_memory = var.fargate_memory
+# module "my-ecs-fargate" {
+#     source = "./modules/ecs-fargate"
+#     aws_region = var.aws_region
 
-}
+# }
