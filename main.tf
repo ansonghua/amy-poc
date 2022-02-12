@@ -153,7 +153,7 @@ resource "aws_lambda_permission" "api_gw" {
 
   source_arn = "${aws_apigatewayv2_api.lambda.execution_arn}/*/*"
 }
-
+ 
 module "my-ecs-fargate" {
     source = "./modules/ecs-fargate"
     aws_region = var.aws_region
