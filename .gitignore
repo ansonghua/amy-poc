@@ -3,6 +3,7 @@
 # Local .terraform directories
 **/.terraform/*
 .terraform.lock.hcl
+hello-world.zip
 # .tfstate files
 *.tfstate
 *.tfstate.*
