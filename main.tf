@@ -102,7 +102,7 @@ resource "aws_apigatewayv2_api" "lambda" {
 resource "aws_apigatewayv2_stage" "lambda" {
   api_id = aws_apigatewayv2_api.lambda.id
 
-  name        = "serverless_lambda_stage"
+  name        = "dev"
   auto_deploy = true
 
   access_log_settings {
